@@ -1,4 +1,5 @@
-Developed by Mr Nikul Singh Attribution Required*...
+Developed by Mr Nikul Singh Attribution Required *
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 RacoonPy Is Publicly Available for use and enjoy...|
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
