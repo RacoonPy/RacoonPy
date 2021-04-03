@@ -73,7 +73,6 @@ class RacoonPy{
     }
     public function test(){
         $this->welcome();
-		$this->get_char("r","acoonpy");
     }
 }
 $formater = new RacoonPy;

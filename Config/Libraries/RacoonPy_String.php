@@ -18,6 +18,4 @@ trait RacoonPy_String{
       endif;
     }
 }
-
-
-?>
+?> 
