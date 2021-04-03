@@ -73,6 +73,7 @@ class RacoonPy{
     }
     public function test(){
         $this->welcome();
+		$this->get_word("orname","orname is not available");
     }
 }
 $formater = new RacoonPy;
