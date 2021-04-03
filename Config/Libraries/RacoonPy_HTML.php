@@ -11,7 +11,7 @@ trait RacoonPy_HTML{
     public function tag($tag_name,$prefix = NULL,$value = NULL){
         // Developed by Mr_Nikul_Singh
         $prefix[] = NULL; 
-        if($tag_name == "input"): 
+        if($tag_name == "input" || $tag_name == "img" || $tag_name == "hr" && $tag_name == "br"): 
             echo @$element = "\n<$tag_name";
             foreach($prefix as $key => $val):
                 if($key != "value"):

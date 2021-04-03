@@ -8,7 +8,7 @@ ____                             ____
                                         |___/ 
 */
 trait RacoonPy_String{
-  public function get_char($needle,$racoonpy_data){
+  public function get_char($needle,string $racoonpy_data){
     $str_chunk = str_split($racoonpy_data);
     if(in_array($needle,$str_chunk) && $needle != "" && $needle != " "):
       $this->pre($needle);
@@ -16,7 +16,7 @@ trait RacoonPy_String{
       echo "Sorry!";
     endif;
   }
-  public function get_word($needle,$racoonpy_data){
+  public function get_word($needle,string $racoonpy_data){
     $str_chunk = explode(" ",$racoonpy_data);
     if(in_array($needle,$str_chunk) && $needle != "" && $needle != " "):
       $this->pre($needle);
