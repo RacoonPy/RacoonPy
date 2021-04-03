@@ -14,6 +14,12 @@ trait RacoonPy_Formatter{
         print_r($format_str);
         echo "</pre>";
     }
+    public function code_format($data = NULL){
+        echo "<pre>";
+        $format_str = $data;
+        print_r($format_str);
+        echo "</pre>";
+    }
     public function code($data = NULL){
         echo "<code>";
         echo $data;

@@ -50,7 +50,8 @@ class RacoonPy{
     RacoonPy_Dir,
     RacoonPy_HTML,
     RacoonPy_HTML_Entities,
-	RacoonPy_HTML_Emoji;
+	RacoonPy_HTML_Emoji,
+	RacoonPy_String;
     public function welcome(){
         echo "<center>";
         $heading['style'] = "color:#01050D;";
@@ -72,6 +73,7 @@ class RacoonPy{
     }
     public function test(){
         $this->welcome();
+		$this->get_char("r","acoonpy");
     }
 }
 $formater = new RacoonPy;
