@@ -74,8 +74,6 @@ class RacoonPy{
     }
     public function test(){
         $this->welcome();
-		$dat['value'] = "rami";
-        $this->tag("div",$dat,$this->tag("h2",$dat));
     }
 }
 $formater = new RacoonPy;
