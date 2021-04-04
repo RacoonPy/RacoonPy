@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Config/Libraries/include/style.css">
+</head>
+<body>
+    
+    <div class="mainbox">
+        <center>
+        <div class="colorBox">
+            <select id="modes" onchange="mode(this.value)">
+                <option value="to top">top</option>
+                <option value="to bottom">bottom</option>
+                <option value="to left">left</option>
+                <option value="to right">right</option>
+            </select>
+            <div class="colorBoxA">
+                <input type="color" value="#01050D" onchange="set_data()" id="colora">
+            </div>
+            <div class="colorBoxB">
+                <input type="color" value="#294886" onchange="set_data()" id="colorb">
+            </div>
+        </div>
+        <div class="gradientBox">
+            <div id="gradientBoxinner"></div>
+            <p id="color-code">backgroud-image:linear-gradient(<span id="mode"></span>,<span id="first_color"></span>,<span id="second_color"></span>);</p>
+        </div>
+        </center>
+    </div>
+
+    <script>
+        var x_color = document.getElementById("colora").value;
+        var y_color = document.getElementById("colorb").value;
+        document.getElementById("first_color").innerHTML = x_color;
+        document.getElementById("second_color").innerHTML = y_color;
+        document.getElementById("mode").innerHTML = "to bottom";
+        document.getElementById("gradientBoxinner").style.backgroundImage = "linear-gradient(to top,"+x_color+","+y_color+")";
+        function mode(mode){
+            var x_color = document.getElementById("colora").value;
+            var y_color = document.getElementById("colorb").value;
+            document.getElementById("mode").innerHTML = mode;
+            document.getElementById("gradientBoxinner").style.backgroundImage = "linear-gradient("+mode+","+x_color+","+y_color+")";
+            document.getElementById("first_color").innerHTML = x;
+            document.getElementById("second_color").innerHTML = y;
+        }
+        function set_data(){
+            var x_color = document.getElementById("colora").value;
+            var y_color = document.getElementById("colorb").value;
+            var mode = document.getElementById("modes").value;
+            document.getElementById("gradientBoxinner").style.backgroundImage = "linear-gradient("+mode+","+x_color+","+y_color+")";
+            document.getElementById("first_color").innerHTML = x;
+            document.getElementById("second_color").innerHTML = y;
+        }
+    </script>
+
+</body>
+</html>

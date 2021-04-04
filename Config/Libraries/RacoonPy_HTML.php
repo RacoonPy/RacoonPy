@@ -30,5 +30,9 @@ trait RacoonPy_HTML{
            echo @$element = ">$prefix[value]$value</$tag_name>\n";
         endif;
     }
+    public function color_generator(){
+        $this->racoonpy_welcome();
+        require_once("include/color_generator.html");
+    }
 }
 ?>

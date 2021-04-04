@@ -53,11 +53,11 @@ class RacoonPy{
 	RacoonPy_HTML_Emoji,
 	RacoonPy_String,
 	RacoonPy_Magic_Txt;
-    public function welcome(){
+    public function racoonpy_welcome(){
         echo "<center>";
         $heading['style'] = "color:#01050D;";
         $heading['value'] = "Welcome To RacoonPy";
-        echo $this->tag("h1",$heading);
+        // echo $this->tag("h1",$heading);
 		$volume = "Version: 1.2.0";
         $code = <<<RACOONPY
          ____                             ____        
@@ -67,13 +67,13 @@ class RacoonPy{
         |_| \_\__,_|\___\___/ \___/|_| |_|_|    \__, |
                                                 |___/ 
         RACOONPY;
-        $data['value'] = $code;
+        $data['value'] = "\n\n\n\n".$code;
         $data['style'] = "color:#294886;font-size:22px;font-weight:bold;margin:auto;margin-bottom:16px;";
         echo $this->tag("pre",$data,"\n\nDeveloper : Mr Nikul Singh / Version: 1.2.0");
         echo "</center>";
     }
     public function test(){
-        $this->welcome();
+        $this->color_generator();
     }
 }
 $formater = new RacoonPy;

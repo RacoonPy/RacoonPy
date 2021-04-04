@@ -9,6 +9,7 @@
 */
 trait RacoonPy_HTML_Entities{
     public function html_entities($status = true){
+	$this->racoonpy_welcome();
     $HTML_ENTITIES = get_html_translation_table(HTML_ENTITIES);
     if($status == true):
 		echo "<center>";
@@ -31,6 +32,7 @@ trait RacoonPy_HTML_Entities{
     endif;
     }
     public function html_entity_list(){
+		$this->racoonpy_welcome();
         echo '
 		<center>
         <h2>ASCII Characters (Printable)</h2>

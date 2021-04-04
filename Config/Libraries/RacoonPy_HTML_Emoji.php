@@ -9,6 +9,7 @@
 */
  trait RacoonPy_HTML_Emoji{
     public function smiley_emoji(){
+        $this->racoonpy_welcome();
         echo'
         <center>
         <h2>Smiley Emoji</h2>
@@ -110,6 +111,7 @@
         ';
     }
     public function dingbats_emoji(){
+        $this->racoonpy_welcome();
         echo '
         <center>
         <h2>UTF-8 Dingbats</h2>
@@ -316,6 +318,7 @@
         ';
     }
     public function math_operators_emoji(){
+        $this->racoonpy_welcome();
         echo '
             <center>
             <h2>UTF-8 Mathematical Operators</h2>
@@ -587,6 +590,7 @@
             </center>';
     }
     public function get_emoji(){
+        $this->racoonpy_welcome();
         echo '
             <center>
             <table border="1" width="50%" style="border-collapse: collapse;">

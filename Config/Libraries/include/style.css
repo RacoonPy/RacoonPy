@@ -1,0 +1,65 @@
+:root{
+    --color-black:#01050D;
+    --color-blue:#294886;
+    --color-white:#E0E0E0;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	height: 32px;
+    width: 100%;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 4px;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+.mainbox{
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    margin-top: 25px;
+}
+.colorBox{
+    padding: 8px;
+    width: 50%;
+    line-height:inherit;
+    display: flex;
+    background-color: var(--color-white);
+}
+.colorBoxA{
+    width: 45%;
+    /* float: left; */
+    margin: 1px;
+}
+.colorBoxB{
+    /* float: right; */
+    margin: 1px;
+    width: 45%;
+}
+.colorBox::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.gradientBox{
+    width: 50%;
+    max-height: 200px;
+    padding: 8px;
+    background-color: var(--color-white);
+}
+#gradientBoxinner{
+    width: initial;
+    height: 200px;
+}
+#color-code{
+    text-align: left;
+    margin-top: 20px;
+}
+select{
+    background-color: var(--color-white);
+    margin: 1px;
+}
