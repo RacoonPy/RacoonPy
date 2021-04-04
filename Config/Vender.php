@@ -14,4 +14,5 @@ require_once("Libraries/RacoonPy_HTML.php");
 require_once("Libraries/RacoonPy_HTML_Entities.php");
 require_once("Libraries/RacoonPy_HTML_Emoji.php");
 require_once("Libraries/RacoonPy_String.php");
+require_once("Libraries/RacoonPy_Magic_Txt.php");
 ?>

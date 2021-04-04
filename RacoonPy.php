@@ -51,7 +51,8 @@ class RacoonPy{
     RacoonPy_HTML,
     RacoonPy_HTML_Entities,
 	RacoonPy_HTML_Emoji,
-	RacoonPy_String;
+	RacoonPy_String,
+	RacoonPy_Magic_Txt;
     public function welcome(){
         echo "<center>";
         $heading['style'] = "color:#01050D;";
@@ -59,7 +60,7 @@ class RacoonPy{
         echo $this->tag("h1",$heading);
 		$volume = "Version: 1.2.0";
         $code = <<<RACOONPY
-        ____                             ____        
+         ____                             ____        
         |  _ \ __ _  ___ ___   ___  _ __ |  _ \ _   _ 
         | |_) / _` |/ __/ _ \ / _ \| '_ \| |_) | | | |
         |  _ < (_| | (_| (_) | (_) | | | |  __/| |_| |
@@ -73,6 +74,8 @@ class RacoonPy{
     }
     public function test(){
         $this->welcome();
+		$dat['value'] = "rami";
+        $this->tag("div",$dat,$this->tag("h2",$dat));
     }
 }
 $formater = new RacoonPy;

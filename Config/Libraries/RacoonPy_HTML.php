@@ -9,18 +9,18 @@ ____                             ____
 */
 trait RacoonPy_HTML{
     public function tag($tag_name,$prefix = NULL,$value = NULL){
-        // Developed by Mr_Nikul_Singh
+        // Developed by RacoonPy
         $prefix[] = NULL; 
         if($tag_name == "input" || $tag_name == "img" || $tag_name == "hr" && $tag_name == "br"): 
             echo @$element = "\n<$tag_name";
             foreach($prefix as $key => $val):
-                if($key != "value"):
+                if($key != "0"):
                     echo " $key='$val'";
                 endif;
-            endforeach;
+            endforeach; 
            echo @$element = "/>\n";
         else: 
-        // Developed by Mr_Nikul_Singh
+        // Developed by RacoonPy
            echo @$element = "\n<$tag_name";
             foreach($prefix as $key => $val):
                 if($key != "value"):
