@@ -68,7 +68,7 @@ class RacoonPy{
                                                 |___/ 
         RACOONPY;
         $data['value'] = "\n\n\n\n".$code;
-        $data['style'] = "color:#294886;font-size:22px;font-weight:bold;margin:auto;margin-bottom:16px;";
+        $data['style'] = "color:#294886;font-size:18px;font-weight:bold;margin:auto;margin-bottom:16px;";
         echo $this->tag("pre",$data,"\n\nDeveloper : Mr Nikul Singh / Version: 1.2.0");
         echo "</center>";
     }
